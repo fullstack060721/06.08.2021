@@ -31,5 +31,7 @@ create or replace FUNCTION sp_sum_diff(x int, y int, OUT the_sum int, OUT the_di
     $$ LANGUAGE plpgsql;
 
 select * from sp_sum_diff(8, 12);
+select * from sp_sum_diff(y => 10, x => 20);
+
 
 
