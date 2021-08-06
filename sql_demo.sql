@@ -33,5 +33,10 @@ create or replace FUNCTION sp_sum_diff(x int, y int, OUT the_sum int, OUT the_di
 select * from sp_sum_diff(8, 12);
 select * from sp_sum_diff(y => 10, x => 20);
 
+-- targil
+--create or replace FUNCTION  sp_statistics(x double precision, y double precision ,OUT the_mul double precision,
+--        OUT the_div double precision)
+
+
 
 
