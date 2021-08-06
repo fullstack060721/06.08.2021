@@ -35,8 +35,9 @@ select * from sp_sum_diff(y => 10, x => 20);
 
 -- targil
 --create or replace FUNCTION  sp_statistics(x double precision, y double precision ,OUT the_mul double precision,
---        OUT the_div double precision)
+--        OUT the_div double precision, OUT sqrt_x double precision, OUT sqrt_y double precision, 
+--        OUT power_x_y double precision)
 
-
-
+select * from power(2, 3); -- 8
+select * from sqrt(9); -- 3
 
