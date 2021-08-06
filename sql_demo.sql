@@ -22,4 +22,14 @@ language plpgsql AS
 
 select * from sp_sum(4.5, 12.888);
 
+create or replace FUNCTION sp_sum_diff(x int, y int, OUT the_sum int, OUT the_diff int) AS
+    $$
+        BEGIN
+            the_sum := x + y;
+            the_diff := x - y;
+        END;
+    $$ LANGUAGE plpgsql;
+
+select * from sp_sum_diff(8, 12);
+
 
